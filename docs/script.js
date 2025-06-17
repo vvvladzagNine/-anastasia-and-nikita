@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         template_params: {
                             from_name: name,
                             message: message,
-                            to_email: 'wladzag999@gmail.com'
+                            to_email: 'gban137@mail.ru'
                         },
                         accessToken: 'ABzc2ZS6P14emVOm4EHAj'
                     })
