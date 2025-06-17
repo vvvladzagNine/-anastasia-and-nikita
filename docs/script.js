@@ -270,6 +270,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 'late':
                     attendanceText = 'буду присутствовать, но не к началу торжества';
                     break;
+                case 'child1':
+                    attendanceText = 'буду присутствовать с ребенком';
+                    break;
+                case 'child2':
+                    attendanceText = 'буду присутствовать с двумя детьми';
+                    break;
             }
             
             let drinksText = '';

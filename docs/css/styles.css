@@ -640,7 +640,7 @@ h2 {
     max-width: 100%;
     margin: 120px 0 0;
     padding: 10px 16px;
-    background-image: url('../images/location_main.png');
+    background-image: url('../images/location.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -668,7 +668,7 @@ h2 {
     height: 268px;
     padding: 28px 16px;
     background: rgba(255, 255, 255, 0.66);
-    backdrop-filter: blur(8.9px);
+    backdrop-filter: blur(1.1px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -703,7 +703,7 @@ h2 {
     line-height: 22.1px;
     letter-spacing: 0;
     text-align: center;
-    color: #535A62;
+    color: #33383d;
 }
 
 .location-map-button {
@@ -794,19 +794,22 @@ h2 {
 
 /* Разрешенные цвета */
 .color-circles-container:not(.forbidden) .color-circle:nth-child(1) {
-    background-color: #1C1D21;
+    background-color: #666956;
 }
 
 .color-circles-container:not(.forbidden) .color-circle:nth-child(2) {
-    background-color: #71767C;
+    background-color: #8d8e7c;
 }
 
 .color-circles-container:not(.forbidden) .color-circle:nth-child(3) {
-    background-color: #889B93;
+    background-color: #b08a7f;
 }
 
 .color-circles-container:not(.forbidden) .color-circle:nth-child(4) {
-    background-color: #AFB9C5;
+    background-color: #efbfbb;
+}
+.color-circles-container:not(.forbidden) .color-circle:nth-child(5) {
+    background-color: #Fee4e3;
 }
 
 /* Запрещенные цвета */
