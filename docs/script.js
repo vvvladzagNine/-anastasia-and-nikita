@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             template_params: {
                                 from_name: name,
                                 message: message,
-                                to_email: 'wladzag999@gmail.com'
+                                to_email: 'gban137@mail.ru'
                             },
                             accessToken: 'ABzc2ZS6P14emVOm4EHAj'
                         })
@@ -269,12 +269,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     break;
                 case 'late':
                     attendanceText = 'буду присутствовать, но не к началу торжества';
-                    break;
-                case 'child1':
-                    attendanceText = 'буду присутствовать с ребенком';
-                    break;
-                case 'child2':
-                    attendanceText = 'буду присутствовать с двумя детьми';
                     break;
             }
             
