@@ -1455,23 +1455,40 @@ section:last-child {
 @media (max-width: 768px) {
     .outfit-examples-grid {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 10px;
     }
     
     .outfit-row {
-        flex-direction: column;
-        align-items: center;
+        gap: 8px;
     }
     
     .outfit-row:first-child .outfit-example {
-        width: 100%;
-        max-width: 180px;
-        height: 250px;
+        width: 100px;
+        height: 140px;
     }
     
     .outfit-row:last-child .outfit-example {
-        width: 100%;
-        max-width: 220px;
-        height: 300px;
+        width: 120px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 360px) {
+    .outfit-examples-grid {
+        padding: 0 5px;
+    }
+    
+    .outfit-row {
+        gap: 5px;
+    }
+    
+    .outfit-row:first-child .outfit-example {
+        width: 90px;
+        height: 126px;
+    }
+    
+    .outfit-row:last-child .outfit-example {
+        width: 108px;
+        height: 153px;
     }
 }
