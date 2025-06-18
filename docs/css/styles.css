@@ -177,7 +177,7 @@ body {
 
 .header-names {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 0;
     right: 0;
     display: flex;
@@ -192,6 +192,7 @@ body {
     font-size: 40px;
     line-height: 31px;
     letter-spacing: 0;
+    color: #f4f4f4;
 }
 
 .name-left {
@@ -201,7 +202,7 @@ body {
 
 .name-right {
     align-self: flex-end;
-    margin-right: 20px;
+    margin-right: 60px;
 }
 
 .name-and {
@@ -210,6 +211,7 @@ body {
     font-size: 40px;
     line-height: 31px;
     margin: 10px 0;
+    color: #f4f4f4;
 }
 
 /* Текст приглашения */
