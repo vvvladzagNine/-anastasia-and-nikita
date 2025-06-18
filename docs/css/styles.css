@@ -778,8 +778,16 @@ h2 {
     box-sizing: border-box;
 }
 
-.color-circles-container {
+.color-circles-container-forbidden {
     width: 234px;
+    height: 50px;
+    display: flex;
+    gap: 11px;
+    margin: 0 auto 60px;
+}
+
+.color-circles-container {
+    width: 351px;
     height: 50px;
     display: flex;
     gap: 11px;
@@ -797,28 +805,32 @@ h2 {
     background-color: #666956;
 }
 
-.color-circles-container:not(.forbidden) .color-circle:nth-child(2) {
-    background-color: #8d8e7c;
-}
 
-.color-circles-container:not(.forbidden) .color-circle:nth-child(3) {
+
+.color-circles-container:not(.forbidden) .color-circle:nth-child(2) {
     background-color: #b08a7f;
 }
 
-.color-circles-container:not(.forbidden) .color-circle:nth-child(4) {
+.color-circles-container:not(.forbidden) .color-circle:nth-child(3) {
     background-color: #efbfbb;
 }
-.color-circles-container:not(.forbidden) .color-circle:nth-child(5) {
+.color-circles-container:not(.forbidden) .color-circle:nth-child(4) {
     background-color: #Fee4e3;
+}
+.color-circles-container:not(.forbidden) .color-circle:nth-child(5) {
+    background-color: #b59b84;
+}
+.color-circles-container:not(.forbidden) .color-circle:nth-child(6) {
+    background-color: #564028;
 }
 
 /* Запрещенные цвета */
-.color-circles-container.forbidden {
+.color-circles-container-forbidden.forbidden {
     margin-top: 20px;
     
 }
 
-.color-circles-container.forbidden .color-circle {
+.color-circles-container-forbidden.forbidden .color-circle {
     position: relative;
     
 }
@@ -1406,4 +1418,60 @@ input[type="checkbox"]:checked::after {
 section:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.outfit-examples-grid {
+    width: 100%;
+    max-width: 620px;
+    margin: 12px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.outfit-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.outfit-row:first-child .outfit-example {
+    width: 150px;
+    height: 210px;
+}
+
+.outfit-row:last-child .outfit-example {
+    width: 180px;
+    height: 250px;
+}
+
+.outfit-example {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .outfit-examples-grid {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .outfit-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .outfit-row:first-child .outfit-example {
+        width: 100%;
+        max-width: 180px;
+        height: 250px;
+    }
+    
+    .outfit-row:last-child .outfit-example {
+        width: 100%;
+        max-width: 220px;
+        height: 300px;
+    }
 }
